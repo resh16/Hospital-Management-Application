@@ -1,0 +1,12 @@
+D:\Training\MedLife Project\Back-End\CustomIdentity\bin\Debug\net5.0\CustomIdentity.deps.json
+D:\Training\MedLife Project\Back-End\CustomIdentity\bin\Debug\net5.0\CustomIdentity.dll
+D:\Training\MedLife Project\Back-End\CustomIdentity\bin\Debug\net5.0\ref\CustomIdentity.dll
+D:\Training\MedLife Project\Back-End\CustomIdentity\bin\Debug\net5.0\CustomIdentity.pdb
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.AssemblyInfoInputs.cache
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.AssemblyInfo.cs
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.csproj.CoreCompileInputs.cache
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.dll
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\ref\CustomIdentity.dll
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.pdb
+D:\Training\MedLife Project\Back-End\CustomIdentity\obj\Debug\net5.0\CustomIdentity.csproj.AssemblyReference.cache

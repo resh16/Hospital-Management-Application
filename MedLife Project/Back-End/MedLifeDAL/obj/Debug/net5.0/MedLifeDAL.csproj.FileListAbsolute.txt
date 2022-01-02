@@ -1,0 +1,15 @@
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\MedLifeDAL.deps.json
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\MedLifeDAL.runtimeconfig.json
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\MedLifeDAL.runtimeconfig.dev.json
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\MedLifeDAL.dll
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\ref\MedLifeDAL.dll
+D:\Training\MedLife Project\Back-End\MedLifeDAL\bin\Debug\net5.0\MedLifeDAL.pdb
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.AssemblyInfoInputs.cache
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.AssemblyInfo.cs
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.csproj.CoreCompileInputs.cache
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.dll
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\ref\MedLifeDAL.dll
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.pdb
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.genruntimeconfig.cache
+D:\Training\MedLife Project\Back-End\MedLifeDAL\obj\Debug\net5.0\MedLifeDAL.csproj.AssemblyReference.cache

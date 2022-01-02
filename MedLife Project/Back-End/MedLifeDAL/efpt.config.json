@@ -1,0 +1,106 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "MedlifeContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Entities",
+   "ProjectRootNamespace": "MedLifeDAL",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AppoinmentBooking]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppRoleClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppUserClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppUserLogins]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppUserRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AppUserTokens]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Departments]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Doctors]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HealthProblems]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Status]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[usp_GetAllConfirmedPatients]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_GetAllDoctors]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_GetAllPatients]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_GetAllPendingPatients]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_ModifyStatus]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_PatientDetails]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "TRAINEE-07.MedLife",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
