@@ -1,0 +1,64 @@
+<app-patient-navbar></app-patient-navbar>
+
+<div style="align-content: center;">
+    <h1 class="display-4 text-center">Appointment Booking</h1>
+</div>
+<div class="cointainer">
+     <form #form=ngForm (submit)="OnSubmit(form)">
+
+        <div class="row mb-3 form-group">
+            <label  class="col-sm-2 col-form-label">Select Doctor</label>
+            <div class="col-sm-10">
+                <select class="form-select form-control" name="DoctorId" #DoctorId="ngModel" [(ngModel)]="service.formData2.DoctorId"  required >
+                    <option selected>--Select Doctor--</option>
+                    <option value="A9B74184-9FB6-4841-A5A1-08D9C763981E">Doctor1</option>
+                    <option value="4B8C1F38-9820-47CE-B459-08D9C9C8AEEF">Doctor2</option>
+                   
+                  </select>
+                  <div class="validation-error" *ngIf="DoctorId.invalid && DoctorId.touched ">This field is required </div>
+                  
+            </div>
+        </div>
+        
+
+        <div class="row mb-3 form-group">
+          <label  class="col-sm-2 col-form-label">Appointment Date and Time</label>
+          <div class="col-sm-10">
+            <input type="datetime-local" name="AppointmentOn" #AppointmentOn="ngModel" [(ngModel)]="service.formData2.AppointmentOn"  class="form-control" required>
+            <div class="validation-error" *ngIf="AppointmentOn.invalid && AppointmentOn.touched ">This field is required </div>
+          </div>
+        </div>
+        
+        <div class="row mb-3 form-group">
+            <label  class="col-sm-2 col-form-label">Health Problem</label>
+            <div class="col-sm-10">
+                <select class="form-select form-control"  name="HealthProblemId" #HealthProblemId="ngModel" [(ngModel)]="service.formData2.HealthProblemId"  required >
+                   <option selected >--Select Health Problem--</option>
+                    <option value="1">Fever</option>
+                    <option value="2">Common Cold</option>
+                    <option value="3">General Check Up</option>
+                    <option value="4">Stomach Bug</option>
+                    <option value="5">Others</option>
+                  </select>
+                  <div class="validation-error" *ngIf="HealthProblemId.invalid && HealthProblemId.touched ">This field is required </div>
+                  
+            </div>
+        </div>
+
+        <div class=" row mb-3 form-group">
+            <label class="col-sm-2 col-form-label" >Others</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" name="Others" #Others="ngModel" [(ngModel)]="service.formData2.Others" rows="3"></textarea>
+            </div>
+        </div>
+        
+        <div class="col-md-12 text-center">
+            <button type="submit"  class="btn btn-primary form-group " >Book Appointment</button>
+        </div>
+        
+         
+      </form> 
+
+      
+
+</div>

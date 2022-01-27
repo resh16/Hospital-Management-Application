@@ -1,0 +1,44 @@
+
+
+
+<div style="align-content: center;">
+    <h1 class="display-4 text-center">Update Patient Status</h1>
+</div>
+
+
+<div class="cointainer">
+    <form #form=ngForm (submit)="OnSubmit(form)"  >
+
+       
+       <div class="row mb-3 form-group">
+           <label  class="col-sm-2 col-form-label">Change Status</label>
+           <div class="col-sm-10">
+               <select class="form-select form-control"  name="StatusId" #StatusId="ngModel" [(ngModel)]="service.formData3.StatusId"  required >
+                  <option selected >--Select Appointment Status--</option>
+                   <option value="2">Booking Conformed</option>
+                   <option value="3">Visited</option>
+                   <option value="4">Not Visited</option>
+                </select>
+                <div class="validation-error" *ngIf="StatusId.invalid && StatusId.touched ">This field is required </div>
+                
+                 
+            </div>
+       </div>
+
+       <div class=" row mb-3 form-group">
+           <label class="col-sm-2 col-form-label" >Priscription</label>
+           <div class="col-sm-10">
+             <textarea class="form-control" name="Priscription" #StatusId="ngModel" [(ngModel)]="service.formData3.Priscription" required  rows="3"></textarea>
+           </div>
+       </div>
+       
+       <div class="col-md-12 text-center">
+           <button type="submit"  class="btn btn-primary form-group " >Update Status</button>
+       </div>
+       
+        
+     </form> 
+
+     
+
+</div>

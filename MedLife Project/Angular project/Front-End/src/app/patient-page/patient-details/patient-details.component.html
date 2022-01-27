@@ -1,0 +1,35 @@
+<app-patient-navbar></app-patient-navbar>
+
+<div style="align-content: center;">
+    <h1 class="display-4 text-center">Appointment Booking Details</h1>
+</div>
+
+<div class="container-fluid" *ngFor = "let p of PatientsDetails">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="card" style="background-color:lightblue;">
+                <div class="card-horizontal">
+                   
+                   
+                    <div class="card-body">
+                        <h3 class="card-title display-4 text-center">Booking Details</h3>
+                        <p class="card-text"><strong>Name:</strong>{{p.patientName}}  </p>
+                        <p class="card-text"><strong>Email:</strong> {{p.email}} </p>
+                        <p class="card-text"><strong>Age:</strong>{{p.age}}  </p>
+                        <p class="card-text"><strong>Gender:</strong>{{p.gender}}  </p>
+                        <p class="card-text"><strong>Doctor Name:</strong>{{p.doctorName}}  </p>
+                        <p class="card-text"><strong>AppointmentOn:</strong> {{p.appointmentOn}} </p>
+                        <p class="card-text"><strong>HealthProblem:</strong>{{p.healthProblem}}  </p>
+                        <p class="card-text"><strong>Others:</strong> {{p.others}} </p>
+                        <p class="card-text"><strong>Status:</strong> {{p.status}} </p>
+                        <p class="card-text"><strong>Priscription:</strong>{{p.priscription}}  </p>
+                        
+                    </div>
+                </div>
+                <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

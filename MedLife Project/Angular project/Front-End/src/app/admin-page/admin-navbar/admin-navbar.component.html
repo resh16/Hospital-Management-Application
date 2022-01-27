@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/Admin" routerLinkActive="active"  >MedLife-Admin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/Admin/add-doctor-profile" routerLinkActive="active">Add Doctor Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Admin/list-of-doctors" routerLinkActive="active"  >Doctors-List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Admin/list-of-patients" routerLinkActive="active" >Patients-List</a>
+          </li>
+          
+        </ul>
+        
+  
+        <div class="d-flex align-items-center">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"  routerLink="/Admin/register" routerLinkActive="active"  aria-current="page" >Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" (click)="logout()">Logout</a>
+            </li>
+          </ul>
+  
+        </div>
+  
+  
+      </div>
+    </div>
+  </nav>
+    

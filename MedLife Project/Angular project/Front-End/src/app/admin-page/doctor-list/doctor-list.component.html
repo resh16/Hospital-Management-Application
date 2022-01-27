@@ -1,0 +1,32 @@
+<app-admin-navbar></app-admin-navbar>
+<h1 class="mt-4 display-4 text-center " >List Of Registered Doctors</h1>
+
+<table class="table align-middle mt-5">
+    <thead>
+      <tr>
+        <th scope="col">profile-pic</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Department</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">Experience</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let d of Doctors">       
+        <td><img src="{{imgUrl}}{{d.id}}" class="profile-pic" alt="no image"></td>
+         <td>{{d.doctorName}}</td>
+        <td>{{d.email}}</td>
+        <td>{{d.age}}</td>
+        <td>{{d.gender}}</td>
+        <td>{{d.department}}</td>
+        <td>{{d.qualification}}</td>
+        <td>{{d.experience}}</td> 
+        
+      </tr>
+     
+    </tbody>
+  </table>

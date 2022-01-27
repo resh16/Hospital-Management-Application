@@ -1,0 +1,92 @@
+<app-admin-navbar></app-admin-navbar>
+<div style="align-content: center;">
+    <h1 class="display-4 text-center"> Register Doctor/Patient</h1>
+</div>
+<div class="cointainer">
+    <form [formGroup]="service.formsModel" (submit)="OnSubmit()">
+        
+        <div class="row mb-3 form-group required">
+            <label  class="col-sm-2 col-form-label">UserName</label>
+            <div class="col-sm-10">
+              <input type="text" formControlName="UserName" class="form-control" >
+              <label class="text-danger" *ngIf="service.formsModel.get('UserName').touched && service.formsModel.get('UserName').errors?.['required']">This field is mandatory</label>
+            </div>
+        </div>
+
+          <div class="row mb-3 form-group required">
+          <label  class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" formControlName="Name" class="form-control" >
+            <label class="text-danger" *ngIf="service.formsModel.get('Name').touched && service.formsModel.get('Name').errors?.['required']">This field is mandatory</label>
+          </div>
+      </div>
+
+      <div class="row mb-3 form-group required">
+        <label  class="col-sm-2 col-form-label">Age</label>
+        <div class="col-sm-10">
+          <input type="number" formControlName="Age" class="form-control" >
+          <label class="text-danger" *ngIf="service.formsModel.get('Age').touched && service.formsModel.get('Age').errors?.['required']">This field is mandatory</label>
+        </div>
+    </div>
+
+   <div class="row mb-3 form-group required">
+      <label  class="col-sm-2 col-form-label">Gender</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName="Gender" class="form-control" >
+        <label class="text-danger" *ngIf="service.formsModel.get('Gender').touched && service.formsModel.get('Gender').errors?.['required']">This field is mandatory</label>
+      </div>
+  </div>
+          
+  <div class="row mb-3 form-group required">
+    <label  class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="email" formControlName="Email" class="form-control" >
+        <label class="text-danger" *ngIf="service.formsModel.get('Email').touched && service.formsModel.get('Email').errors?.['email']">Invalid Email address.</label>
+    </div>
+  </div>
+        <div class="row mb-3 form-group required">
+          <label  class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" formControlName="Password" class="form-control" >
+            <label class="text-danger" *ngIf="service.formsModel.get('Password').touched && service.formsModel.get('Password').errors?.['required']">This field is mandatory</label>
+            <label class="text-danger" *ngIf="service.formsModel.get('Password').touched && service.formsModel.get('Password').errors?.['minlength(4)']">Minimum 4 characters required</label>
+          </div>
+          
+        </div>
+       <div class="row mb-3 form-group required">
+            <label  class="col-sm-2 col-form-label">Conform Password</label>
+            <div class="col-sm-10">
+              <input type="password" formControlName="ConformPassword" class="form-control" >
+              <label class="text-danger" *ngIf="service.formsModel.get('ConformPassword').touched && service.formsModel.get('ConformPassword').errors?.['required']">This field is mandatory</label>
+              <label class="text-danger" *ngIf="service.formsModel.get('Role').touched && service.formsModel.get('Role').errors?.['passwordMismatch']">Conform Password does not match</label>
+            </div>
+        </div>
+        <fieldset class="row mb-3 form-group required">
+          <legend class="col-form-label col-sm-2 pt-0">Role</legend>
+          <div class="col-sm-10 form-control ">
+            <div class="form-check">
+              <input  class="form-check-input" formControlName="Role" type="radio"   value="Doctor" checked>
+              <label class="text-danger" *ngIf="service.formsModel.get('Role').touched && service.formsModel.get('Role').errors?.['required']">This field is mandatory</label>
+              <label class="form-check-label" >
+               Doctor
+              </label>
+            </div>
+            <div class="form-check">
+              <input  class="form-check-input" formControlName="Role" type="radio"  value="Patient">
+              <label class="text-danger" *ngIf="service.formsModel.get('Role').touched && service.formsModel.get('Role').errors?.['required']">This field is mandatory</label>
+              <label class="form-check-label" >
+                Patient
+              </label>
+            </div>
+           
+          </div>
+        </fieldset> 
+        
+        <button type="submit" class="btn btn-primary form-group" [disabled]="!service.formsModel.valid">Register</button>
+      </form> 
+
+</div>
+
+
+
+  

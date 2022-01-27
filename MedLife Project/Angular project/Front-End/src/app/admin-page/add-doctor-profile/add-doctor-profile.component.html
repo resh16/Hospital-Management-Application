@@ -1,0 +1,63 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div style="align-content: center;">
+    <h1 class="display-4 text-center">Add Doctor Profile</h1>
+</div>
+<div class="cointainer">
+     <form #ProfileForm="ngForm" (submit)="OnSubmit(ProfileForm)">
+
+        <div class="row mb-3 form-group">
+            <label  class="col-sm-2 col-form-label">Select Doctor</label>
+            <div class="col-sm-10">
+                <select class="form-select form-control" name="Id" #Id="ngModel" [(ngModel)]="service.formData.Id" required >
+                    <option selected>--Select Doctor--</option>
+                    <option value="A9B74184-9FB6-4841-A5A1-08D9C763981E">Doctor1</option>
+                    <option value="4B8C1F38-9820-47CE-B459-08D9C9C8AEEF">Doctor2</option>
+                   
+                  </select>
+                  <div class="validation-error" *ngIf="Id.invalid && Id.touched ">This field is required </div>
+            </div>
+        </div>
+        
+
+        <div class="row mb-3 form-group">
+          <label  class="col-sm-2 col-form-label">Qualification</label>
+          <div class="col-sm-10">
+            <input type="text" name="Qualification" #Qualification="ngModel" [(ngModel)]="service.formData.Qualification" class="form-control" required>
+            <div class="validation-error" *ngIf="Qualification.invalid && Qualification.touched" >This field is required </div>
+          </div>
+        </div>
+        <div class="row mb-3 form-group">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Experience</label>
+            <div class="col-sm-10">
+              <input type="number" name="Experience" #Experience="ngModel" [(ngModel)]="service.formData.Experience" class="form-control" required>
+              <div class="validation-error" *ngIf="Experience.invalid && Experience.touched" >This field is required </div>
+            </div>
+        </div>
+        <div class="row mb-3 form-group">
+            <label  class="col-sm-2 col-form-label">Department</label>
+            <div class="col-sm-10">
+                <select class="form-select form-control" name="DepartmentId" #DepartmentId="ngModel" [(ngModel)]="service.formData.DepartmentId" required >
+                    <option selected>--Select Department--</option>
+                    <option value="1">Cardiologist</option>
+                    <option value="2">Gynecologist</option>
+                    <option value="3">General Physician</option>
+                  </select>
+                  <div class="validation-error" *ngIf="DepartmentId.invalid && DepartmentId.touched" >This field is required </div>
+            </div>
+        </div>
+          <div class="row mb-3 form-group">
+            <label  class="col-sm-2 col-form-label">Profile Pic</label>
+            <div class="col-sm-10">
+              <input type="file" name="Image"   #Image accept="image/*" (change)="handleFileInput($event)" class="form-control" required >
+              
+            </div>
+          </div>
+          
+        
+        <button type="submit" class="btn btn-primary form-group" [disabled]="ProfileForm.invalid">Submit</button> 
+      </form> 
+
+      
+
+</div>

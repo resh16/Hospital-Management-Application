@@ -1,0 +1,38 @@
+
+<app-doctor-navbar></app-doctor-navbar>
+<h1 class="mt-4 display-4 text-center " >Booked Patients List</h1>
+
+<table class="table align-middle mt-5">
+    <thead>
+      <tr>
+        
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+        <th scope="col">AppointmentOn</th>
+        <th scope="col">Health Problem</th>
+        <th scope="col">Others</th>
+        <th scope="col">Status</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let p of BookedPatients ">
+       
+       
+        <td>{{p.name}}</td>
+        <td>{{p.email}}</td>
+        <td>{{p.age}}</td>
+        <td>{{p.gender}}</td>
+        <td>{{p.appointmentOn}}</td>
+        <td>{{p.healthProblem}}</td>
+        <td>{{p.others}}</td>
+        <td>{{p.status}}</td>
+        
+        
+      </tr>
+     
+    </tbody>
+  </table>

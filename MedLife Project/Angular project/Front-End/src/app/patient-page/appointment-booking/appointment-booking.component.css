@@ -1,0 +1,20 @@
+.cointainer{
+    margin: 50px;
+}
+
+input ng-touched.ng-invalid{
+    border-color: #dc3545 ;
+}
+
+div.form-group.required>label:first-child:after{
+    content: '*';
+    color: #dc3545;
+    padding-left: 5px;
+}
+
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
